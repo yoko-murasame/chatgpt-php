@@ -78,7 +78,7 @@ $callback = function ($ch, $data) {
 
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-curl_setopt($ch, CURLOPT_URL, 'https://api.openai.com/v1/chat/completions');
+curl_setopt($ch, CURLOPT_URL, 'https://openai.dmdream.top/v1/chat/completions');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_POST, 1);

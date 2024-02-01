@@ -25,7 +25,7 @@ if ((isset($_SESSION['admin'])) && ($_SESSION['admin'] == true)) {
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
                 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-                curl_setopt($ch, CURLOPT_URL, 'https://api.openai.com/v1/models/gpt-3.5-turbo');
+                curl_setopt($ch, CURLOPT_URL, 'https://openai.dmdream.top/v1/models/gpt-4-turbo-preview');
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
                 $response = curl_exec($ch);
@@ -162,8 +162,8 @@ if ((isset($_SESSION['admin'])) && ($_SESSION['admin'] == true)) {
     exit;
 }
 // 定义用户名和密码常量 
-define('USERNAME', 'admin');
-define('PASSWORD', 'admin@2023');
+define('USERNAME', 'yoko');
+define('PASSWORD', '123456');
 // 判断是否提交了表单
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // 获取表单提交的用户名和密码
